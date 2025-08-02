@@ -242,6 +242,7 @@ def simple_evaluate(
                     f"Initializing {model} model, with arguments: {simple_parse_args_string(model_args)}"
                 )
             )
+            print(f'Initializing {model} model, with arguments: {model_args}')
             lm = lm_eval.api.registry.get_model(model).create_from_arg_string(
                 model_args,
                 {
